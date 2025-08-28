@@ -1,0 +1,42 @@
+@import "tailwindcss";
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* custom scroll bar */
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--text-color);
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 5rem;
+}
+/* custom scroll bar */
+:root {
+  --main-color: #ff2c1f;
+  --text-color: #020307;
+  --bg-color: #fff;
+}
+section {
+  padding: 2rem 1.5rem;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+.btn:hover {
+  background: #fa1216;
+}
+.btn {
+  padding: 0.6rem 1.2rem;
+}
+.homeImg {
+  background-image: url(../img/home3.jpg);
+}
