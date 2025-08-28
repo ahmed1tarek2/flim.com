@@ -5,13 +5,9 @@ window.addEventListener("DOMContentLoaded", () => {
   const homeLogo = document.getElementById("home-logo");
 
   menuIcon.addEventListener("click", () => {
-    hiddenList.classList.toggle("hidden");
+    hiddenList.classList.toggle("invisible");
   });
 
-  window.addEventListener("load", () => {
-    hiddenList.classList.add("hidden");
-  });
-  
   window.onscroll = () => {
     hiddenList.classList.toggle("hidden", window.screen.width <= 360);
   };
