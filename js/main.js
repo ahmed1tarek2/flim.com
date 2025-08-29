@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   window.onscroll = () => {
-    hiddenList.classList.toggle("hidden", window.screen.width <= 360);
+    hiddenList.classList.toggle("invisible", window.screen.width <= 360);
   };
 
   window.addEventListener("scroll", () => {
